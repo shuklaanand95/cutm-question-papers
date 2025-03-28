@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <h1>📤 Upload New Question Paper</h1>
+  <form id="uploadForm">
+    <input type="text" id="title" placeholder="Paper Title" required>
+    <input type="text" id="subject" placeholder="Subject (e.g., CSE)" required>
+    <input type="text" id="semester" placeholder="Semester (e.g., 4)" required>
+    <input type="text" id="year" placeholder="Year (e.g., 2023)" required>
+    <input type="file" id="pdfFile" accept=".pdf" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Manual Upload Steps:\n1. Upload PDF to /papers/ folder\n2. Update papers.json manually");
+    });
+  </script>
+</body>
+</html>
