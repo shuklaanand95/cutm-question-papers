@@ -5,17 +5,18 @@
       "title": "Data Structures 2023",
       "subject": "CSE",
       "semester": "4",
+      "year": "2023",
       "file": "https://github.com/shuklaanand95/cutm-question-papers/raw/main/papers/ds-sem4.pdf",
       "downloads": 0
-    }
-  {
+    },
+    {
       "id": 2,
-      "title": "MY srs",
+      "title": "MY SRS",
       "subject": "CSE",
       "semester": "6",
-      "file": "https://github.com/shuklaanand95/cutm-question-papers/raw/main/papers/srs",
+      "year": "2023",
+      "file": "https://github.com/shuklaanand95/cutm-question-papers/raw/main/papers/srs-sem6.pdf",
       "downloads": 0
     }
- 
   ]
 }
