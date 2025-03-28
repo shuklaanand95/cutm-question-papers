@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CUTM Question Papers</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTM Engineering Question Papers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>📚 CUTM Engineering Question Papers</h1>
-    <button id="loginBtn">Admin Login</button>
-  </header>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-book-open"></i> CUTM Engineering Question Papers</h1>
+            <div class="admin-section">
+                <button id="loginBtn"><i class="fas fa-lock"></i> Admin Login</button>
+                <span id="adminStatus"></span>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <div id="papers-container">
-      <!-- Papers will load here -->
+    <div class="controls">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search papers...">
+            <i class="fas fa-search"></i>
+        </div>
+        
+        <div class="filters">
+            <select id="subjectFilter">
+                <option value="">All Subjects</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics</option>
+                <option value="ME">Mechanical</option>
+                <option value="CE">Civil</option>
+            </select>
+            
+            <select id="semesterFilter">
+                <option value="">All Semesters</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+            </select>
+            
+            <select id="yearFilter">
+                <option value="">All Years</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+            
+            <button id="resetFilters">Reset Filters</button>
+        </div>
     </div>
-  </main>
 
-  <script src="script.js"></script>
+    <main>
+        <div id="stats">
+            <span id="paperCount">0 papers</span>
+            <span id="totalDownloads">0 downloads</span>
+        </div>
+        
+        <div id="papers-container" class="papers-grid">
+            <!-- Papers will load here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 CUTM Question Papers | Developed by [Your Name]</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
